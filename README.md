@@ -48,6 +48,31 @@ if (zlib != null) {
 
 The library also includes a subsidiary class, Tree, which provides Inflate with a data structure for storing Huffman Trees. It contains no methods other than a constructor which initializes each instance’s two data arrays. The constructor has no parameters.
 
+## Test
+
+The library can be tested with the following code. Squirrel will throw a runtime error if the supplied data is not inflated correctly.
+
+```
+#require "Inflate.class.nut:1.0.0"
+
+local a = [120,156,203,72,205,201,201,087,40,207,47,202,73,1,0,26,11,4,93];
+local b = blob(a.len());
+foreach (v in a) {
+	b.writen(v, 'b');
+}
+
+local s = "";
+local i = Inflate.decompress(b);
+if (i != null) {
+	i.seek(0, 'b');
+	foreach (byte in i) {
+    	s = s + byte.tochar();
+	}
+}
+
+assert(s == "hello world");
+```
+
 ## License
 
 The Inflate library is licensed under the terms of the [MIT license](https://github.com/electricimp/Inflate/blob/master/LICENSE).
