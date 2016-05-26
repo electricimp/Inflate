@@ -21,7 +21,7 @@ local decompressedData = Inflate.decompress(data);
 
 This method inflates the deflate-compressed data passed into its *source* parameter. This data *must* be stored as a blob.
 
-A second, optional parameter, *debug* is provided. It defaults to `false`, but if you pass in `true`, the class will log progress data and other information during the decompression process.
+A second, optional parameter, *debug*, is provided. It defaults to `false`, but if you pass in `true`, the class will log progress data and other information during the decompression process.
 
 If the decompression fails in any way, the method returns `null`, otherwise it returns a new blob containing the decompressed binary data.
 
