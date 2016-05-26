@@ -1,6 +1,6 @@
 # Inflate
 
-This library allows Squirrel code to decompress downloaded data encoded using the [deflate method](https://en.wikipedia.org/wiki/DEFLATE), as used in zip and gzip file compression, and PNG images.
+This library allows Squirrel code to decompress downloaded data that was compressed using the [deflate method](https://en.wikipedia.org/wiki/DEFLATE), as used in zip and gzip file compression, and PNG images.
 
 **To include the library in your code, add** `#require "Inflate.class.nut:1.0.0"` **at the top of your agent or device code**
 
