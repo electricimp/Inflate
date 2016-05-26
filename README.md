@@ -50,7 +50,7 @@ The library also includes a subsidiary class, Tree, which provides Inflate with 
 
 ## Test
 
-The library can be tested with the following code. Squirrel will throw a runtime error if the supplied data is not inflated correctly.
+The Inflate library can be tested with the following code. Squirrel will throw a runtime error if the supplied data is not inflated correctly.
 
 ```
 #require "Inflate.class.nut:1.0.0"
