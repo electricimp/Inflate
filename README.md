@@ -37,7 +37,7 @@ if (zlib != null) {
         // De-filter the image data
         zlib.data = defilter(zlib.height, zlib.width, zlib.bpc, zlib.data, debug);
         if (zlib.data != null) {
-            // Render the extracted image as a 256 x 256 bitman and return it
+            // Render the extracted image as a 256 x 256 bitmap and return it
             return render(zlib.height, zlib.width, zlib.bpc, zlib.data, debug);
         }
     }
