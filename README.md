@@ -6,7 +6,7 @@ This library allows Squirrel code to decompress data encoded using the [deflate 
 
 ## Class Usage
 
-The primary class, Inflate, has no constructor &mdash; simply call its only method, decompress()* as a class method:
+The primary class, Inflate, has no constructor &mdash; simply call its only method, *decompress()* as a class method:
 
 ```squirrel
 #require "Inflate.class.nut:1.0.0"
