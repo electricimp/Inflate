@@ -25,6 +25,8 @@ A second, optional parameter, *debug* is provided. It defaults to `false`, but i
 
 If the decompression fails in any way, the method returns `null`, otherwise it returns a new blob containing the decompressed binary data.
 
+#### Example
+
 ```squirrel
 // Decode the PNG data
 local zlib = decode(downloadData, true);
@@ -42,6 +44,10 @@ if (zlib != null) {
 }
 ```
 
+## The Tree Class
+
+The library also includes a subsidiary class, Tree, which provides Inflate with a data structure for storing Huffman Trees. It contains no methods other than a constructor which initializes each instance’s two data arrays. The constructor has no parameters.
+
 ## License
 
-The Inflate library is licensed under the terms of the [MIT license]()
+The Inflate library is licensed under the terms of the [MIT license](https://github.com/electricimp/Inflate/blob/master/LICENSE).
